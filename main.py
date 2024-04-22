@@ -5,7 +5,7 @@ from datetime import datetime
 
 import requests
 
-# 文件保存路径请修改20行的root参数，code为地区代码，date为日期
+# 文件保存路径请修改17行的root参数，code为地区代码，date为日期
 
 hour = time.localtime(time.time()).tm_hour
 today = datetime.now().strftime("%Y%m%d")
