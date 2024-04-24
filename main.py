@@ -14,7 +14,7 @@ code = input("请输入你要下载的视频的地区编号:")
 date = input("请输入你要下载的视频的日期(格式：" + today + ")：")
 
 # 视频保存路径
-root = "F:/Downloads/" + code + "/" + date + "/"
+root = "F:\\Downloads\\" + code + "\\" + date + "\\"
 
 # 判断路径是否存在，不在则创建目录
 if not os.path.exists(root):
@@ -43,9 +43,9 @@ for i in range(hour):
                         with open(path, 'wb') as f:
                             f.write(r.content)
                             f.close()
-                            print(f"{date[:4]}-{date[4:6]}-{date[6:]}" + " " + str(i) + ":" + str(m) + " 文件保存成功")
+                            print(f"{date[:4]}-{date[4:6]}-{date[6:]}" + " " + str(i) + ":" + str(m) + " 文件保存成功 √")
                 else:
-                    print(f"{date[:4]}-{date[4:6]}-{date[6:]}" + " " + str(i) + ":" + str(m) + " 源文件不存在")
+                    print(f"{date[:4]}-{date[4:6]}-{date[6:]}" + " " + str(i) + ":" + str(m) + " 源文件不存在 ×")
             else:
                 print("文件已存在")
         except:
