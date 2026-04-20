@@ -2,10 +2,6 @@
 
 当前版本不再依赖手工猜测视频文件名，而是直接读取页面实际使用的数据源 `rt_list.js`，自动发现当前可用观测点及其最新视频地址，再进行下载或持续监控。
 
-项目地址：
-- 页面入口：https://weather.sz.gov.cn/qixiangfuwu/qixiangjiance/shijingjiance/index.html
-- 数据列表：https://weather.121.com.cn/data_cache/video/rt/rt_list.js
-
 ## 功能特性
 
 - 自动读取当前可用观测点列表
